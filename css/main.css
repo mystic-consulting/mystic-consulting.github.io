@@ -1,0 +1,160 @@
+/* Mystic Consulting LLC - Main Stylesheet */
+
+/* -------------------------------------------------- */
+/* Global                                             */
+/* -------------------------------------------------- */
+
+body {
+  font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+  padding-top: 56px; /* offset for fixed navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+/* -------------------------------------------------- */
+/* Hero Section (Homepage)                            */
+/* -------------------------------------------------- */
+
+.hero-section {
+  min-height: calc(100vh - 56px);
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 40%, #1a3a5c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* -------------------------------------------------- */
+/* Page Hero Banners (inner pages)                    */
+/* -------------------------------------------------- */
+
+.page-hero {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero-software {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1e3a5f 50%, #1565c0 100%);
+}
+
+.page-hero-web {
+  background: linear-gradient(135deg, #0a2e1a 0%, #145a32 50%, #1e8449 100%);
+}
+
+.page-hero-mobile {
+  background: linear-gradient(135deg, #2c1810 0%, #6d2c0f 50%, #d4580a 100%);
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 60%, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+}
+
+/* -------------------------------------------------- */
+/* Service Cards (Homepage)                           */
+/* -------------------------------------------------- */
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.service-banner {
+  min-height: 220px;
+  position: relative;
+}
+
+.software-banner {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+}
+
+.web-banner {
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+}
+
+.mobile-banner {
+  background: linear-gradient(135deg, #e65100, #bf360c);
+}
+
+/* -------------------------------------------------- */
+/* Technology Section                                 */
+/* -------------------------------------------------- */
+
+.tech-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+.tech-badge:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* -------------------------------------------------- */
+/* Feature List Items                                 */
+/* -------------------------------------------------- */
+
+.feature-item {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #f8f9fa;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------------------------------- */
+/* CTA Sections                                       */
+/* -------------------------------------------------- */
+
+.cta-section {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%);
+}
+
+/* -------------------------------------------------- */
+/* Footer                                             */
+/* -------------------------------------------------- */
+
+footer a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
